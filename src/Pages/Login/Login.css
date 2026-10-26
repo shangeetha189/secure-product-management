@@ -1,0 +1,572 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* MAIN */
+
+.aurelia-login {
+  min-height: 100vh;
+  display: flex;
+  background: #f3efe6;
+  color: #172536;
+}
+
+
+/* =========================================
+   LEFT SHOWCASE
+========================================= */
+
+.aurelia-showcase {
+  width: 57%;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+
+  padding: 42px 55px;
+
+  background-color: #e9e4d8;
+
+  background-image:
+    linear-gradient(
+      rgba(23, 37, 54, 0.045) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(23, 37, 54, 0.045) 1px,
+      transparent 1px
+    );
+
+  background-size: 42px 42px;
+}
+
+
+/* BRAND */
+
+.aurelia-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  font-size: 17px;
+  font-weight: 800;
+
+  letter-spacing: 4px;
+}
+
+.brand-mark {
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #172536;
+  color: #f3efe6;
+
+  font-size: 19px;
+  font-weight: bold;
+
+  border-radius: 50%;
+}
+
+
+/* CONTENT */
+
+.showcase-content {
+  position: absolute;
+
+  left: 55px;
+  top: 24%;
+
+  max-width: 600px;
+}
+
+.eyebrow {
+  color: #d85b35;
+
+  font-size: 11px;
+  font-weight: bold;
+
+  letter-spacing: 2.5px;
+
+  margin-bottom: 22px;
+}
+
+.showcase-content h1 {
+  margin: 0;
+
+  font-size: clamp(50px, 5.5vw, 82px);
+
+  line-height: 0.96;
+
+  letter-spacing: -4px;
+
+  font-weight: 800;
+}
+
+.showcase-content h1 em {
+  color: #d85b35;
+  font-style: normal;
+}
+
+.showcase-content p {
+  max-width: 440px;
+
+  margin-top: 28px;
+
+  color: #66717c;
+
+  font-size: 16px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================
+   FLOATING PRODUCT
+========================================= */
+
+.floating-product {
+  position: absolute;
+
+  right: 8%;
+  bottom: 17%;
+
+  width: 285px;
+
+  padding: 18px;
+
+  background: #172536;
+
+  color: white;
+
+  border-radius: 18px;
+
+  transform: rotate(-4deg);
+
+  box-shadow:
+    18px 22px 0 rgba(216, 91, 53, 0.18);
+}
+
+.product-number {
+  font-size: 11px;
+  color: #aab5bf;
+
+  letter-spacing: 2px;
+
+  margin-bottom: 12px;
+}
+
+.product-visual {
+  height: 125px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #d8dfd5;
+
+  border-radius: 12px;
+
+  color: #172536;
+
+  font-size: 70px;
+
+  overflow: hidden;
+}
+
+.product-visual span {
+  transform: rotate(15deg);
+}
+
+.product-info {
+  padding-top: 17px;
+}
+
+.product-info small {
+  color: #8e9aa5;
+
+  font-size: 9px;
+
+  letter-spacing: 2px;
+}
+
+.product-info h3 {
+  margin: 7px 0 15px;
+
+  font-size: 18px;
+}
+
+.product-bottom {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+}
+
+.product-bottom strong {
+  font-size: 17px;
+}
+
+.stock {
+  color: #9bc49c;
+
+  font-size: 9px;
+
+  font-weight: bold;
+
+  letter-spacing: 1px;
+}
+
+
+/* FOOTER */
+
+.showcase-footer {
+  position: absolute;
+
+  bottom: 38px;
+  left: 55px;
+  right: 55px;
+
+  display: flex;
+  justify-content: space-between;
+
+  color: #87909a;
+
+  font-size: 9px;
+
+  letter-spacing: 2px;
+}
+
+
+/* =========================================
+   RIGHT FORM
+========================================= */
+
+.aurelia-form-section {
+  width: 43%;
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #f8f5ee;
+}
+
+.form-container {
+  width: 430px;
+
+  padding: 35px;
+}
+
+
+/* TOP */
+
+.form-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 65px;
+
+  font-size: 9px;
+
+  font-weight: bold;
+
+  letter-spacing: 2px;
+}
+
+.form-top > span {
+  color: #d85b35;
+}
+
+.status-dot {
+  color: #7c927c;
+
+  font-size: 8px;
+
+  letter-spacing: 1px;
+}
+
+
+/* HEADING */
+
+.form-heading h2 {
+  margin: 0;
+
+  font-size: 55px;
+
+  line-height: 0.95;
+
+  letter-spacing: -3px;
+}
+
+.form-heading h2 span {
+  color: #d85b35;
+}
+
+.form-heading p {
+  color: #78818a;
+
+  line-height: 1.6;
+
+  font-size: 14px;
+
+  max-width: 300px;
+
+  margin-top: 20px;
+
+  margin-bottom: 42px;
+}
+
+
+/* =========================================
+   FORM
+========================================= */
+
+.field {
+  margin-bottom: 25px;
+}
+
+.field label {
+  display: block;
+
+  margin-bottom: 9px;
+
+  color: #59636c;
+
+  font-size: 9px;
+
+  font-weight: bold;
+
+  letter-spacing: 1.5px;
+}
+
+.aurelia-input {
+  height: 57px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  padding: 0 16px;
+
+  background: #eeeae1;
+
+  border: 1px solid #ddd7cb;
+
+  border-radius: 10px;
+
+  transition: 0.25s;
+}
+
+.aurelia-input:focus-within {
+  background: #f8f5ee;
+
+  border-color: #d85b35;
+
+  box-shadow:
+    0 0 0 4px rgba(216, 91, 53, 0.08);
+}
+
+.aurelia-input svg {
+  font-size: 19px;
+
+  color: #858e96;
+}
+
+.aurelia-input input {
+  width: 100%;
+
+  border: none;
+  outline: none;
+
+  background: transparent;
+
+  color: #172536;
+
+  font-size: 14px;
+}
+
+.aurelia-input input::placeholder {
+  color: #a1a6aa;
+}
+
+
+/* VISIBILITY */
+
+.visibility {
+  border: none;
+
+  background: transparent;
+
+  color: #8b9297;
+
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+}
+
+.visibility:hover {
+  color: #d85b35;
+}
+
+
+/* =========================================
+   BUTTON
+========================================= */
+
+.aurelia-login-button {
+  width: 100%;
+
+  height: 59px;
+
+  margin-top: 12px;
+
+  padding: 0 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border: none;
+
+  border-radius: 11px;
+
+  background: #172536;
+
+  color: white;
+
+  font-size: 13px;
+
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: 0.25s;
+}
+
+.aurelia-login-button:hover {
+  background: #d85b35;
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 12px 25px rgba(216, 91, 53, 0.2);
+}
+
+.aurelia-login-button svg {
+  font-size: 20px;
+}
+
+
+/* REGISTER */
+
+.new-user {
+  display: flex;
+
+  justify-content: center;
+
+  gap: 7px;
+
+  margin-top: 28px;
+
+  font-size: 12px;
+
+  color: #899097;
+}
+
+.new-user a {
+  color: #d85b35;
+
+  font-weight: bold;
+
+  text-decoration: none;
+}
+
+.new-user a:hover {
+  text-decoration: underline;
+}
+
+
+/* SECURITY */
+
+.security-note {
+  margin-top: 45px;
+
+  padding-top: 18px;
+
+  border-top: 1px solid #ddd7cb;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  color: #8a9298;
+
+  font-size: 10px;
+
+  line-height: 1.5;
+}
+
+.security-note svg {
+  font-size: 16px;
+
+  color: #7c927c;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 950px) {
+
+  .aurelia-showcase {
+    width: 50%;
+  }
+
+  .aurelia-form-section {
+    width: 50%;
+  }
+
+  .showcase-content h1 {
+    font-size: 52px;
+  }
+
+  .floating-product {
+    display: none;
+  }
+
+}
+
+
+@media (max-width: 700px) {
+
+  .aurelia-showcase {
+    display: none;
+  }
+
+  .aurelia-form-section {
+    width: 100%;
+  }
+
+  .form-container {
+    width: 90%;
+    max-width: 430px;
+  }
+
+}
